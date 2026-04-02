@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>👩‍🏫 Teacher Panel</h2>
+</div>
+
+<div class="container">
+
+    <select id="subject">
+        <option value="1">DBMS</option>
+        <option value="2">Microprocessor</option>
+        <option value="3">IOT</option>
+        <option value="4">Discrete Mathematics</option>
+    </select>
+
+    <input type="date" id="date">
+
+    <button onclick="loadStudents()">Load Students</button>
+
+    <div id="studentList"></div>
+
+    <button onclick="submitAttendance()">Submit Attendance</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

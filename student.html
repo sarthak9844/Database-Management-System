@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🎓 Student Dashboard</h2>
+</div>
+
+<div class="container">
+
+    <input id="roll" placeholder="Roll No">
+    <input type="date" id="date">
+
+    <button onclick="getReport()">Overall</button>
+    <button onclick="getSubject()">Subjects</button>
+    <button onclick="getByDate()">By Date</button>
+
+    <div class="grid">
+        <div class="card">
+            <h3 id="overall">Overall Attendance</h3>
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div class="card" id="subject"></div>
+        <div class="card" id="datewise"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById("roll").value = params.get("roll");
+</script>
+
+</body>
+</html>
