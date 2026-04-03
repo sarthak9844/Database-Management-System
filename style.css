@@ -11,7 +11,9 @@ body {
     padding: 15px;
     text-align: center;
 }
-
+h1{
+    text-align: center;
+}
 /* LOGIN */
 .login-box {
     width: 300px;
